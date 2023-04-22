@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en" style="--yellow-color: #8bc34a;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+
+
+<script>
+  $(document).ready(function(){
+    $("#welcomeModal").modal('show');
+  });
+</script>
+
+
+  <style>
+      body {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  
+<body>
+  <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="welcomeModalLabel">Welcome to my portfolio!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Thank you for visiting my work in progress website, I'm so glad you're here!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script>
+    // Check if the cookie exists
+    if (document.cookie.indexOf("visited=true") === -1) {
+      // Show the welcome modal
+      $('#welcomeModal').modal('show');
+
+      // Set the cookie to expire in 30 days
+      var date = new Date();
+      date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+      document.cookie = "visited=true" + expires + "; path=/";
+    }
+  </script>
+</body>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#welcomeModal" style="display:none;">Open Modal</button>
+</body>
+
+  
+  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <video autoplay loop muted playsinline poster="poster.jpg" id="bg-video">
+    <source src="leaf.mp4" type="video/mp4">
+  </video>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-dark" href="#home-section">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-dark" href="#about-intro">About Me</a>
+        </li>
+        
+       <li class="nav-item">
+          <a class="nav-link btn btn-outline-dark" href="#skills-section">My Skills</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-dark" href="#projects-section">Projects</a>
+        </li>
+         
+        
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-dark" href="#resume-section">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link btn btn-outline-dark" href="#connect-section">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+
+
+<section id="home-section" href="#home-section">
+  <div class="home-content">
+    <div class="intro">
+    <div>
+      <h1>I'm Sidney Julian</h1>
+      <h2 id="typing-header"></h2>
+    </div>
+    <div class="description">
+      <div class="text">
+        <p>Welcome to my portfolio webpage! I created this website as a way to challenge myself and expand my knowledge of computers and programming languages. As someone who is constantly seeking to learn and grow, I saw this as an opportunity to dive into the world of web development and showcase my skills.</p>
+        <p>In addition to my passion for technology, I am also deeply committed to environmental sustainability. As a data analyst, I believe that leveraging the power of data can have a significant impact in the fight against climate change. Through this portfolio, I hope to demonstrate my diverse abilities, while also sharing my enthusiasm for creating a better, more sustainable world.</p>
+        <a href="sustainability-blog.html" class="button">Check out my Sustainability Blog</a>
+      </div>
+      <div class="image">
+        <section id="pic">
+          <img src="Headshot.jpg" alt="My Photo" style="width: 100%;">
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="about-intro" href="#about-intro">
+  <h2>About Me</h2>
+<div id="about-section">
+  <div class="about-section">
+    <!--<img src="https://th.bing.com/th/id/R.a2a88491420795f5d3b20ad24068a69a?rik=PImaNk39lg%2f%2boA&riu=http%3a%2f%2fthecatholicspirit.com%2fwp-content%2fuploads%2f2012%2f10%2fWEB-UST-logo.jpg&ehk=ugfMeAhAQP5yNVVNISoFdpAai97n6pws5vvQy0pM50M%3d&risl=&pid=ImgRaw&r=0" alt="UST"> -->
+    <h3>University of St. Thomas</h3>
+    <p>I earned a Bachelor's of Science degree in Buisness Economics with minors in Sustanability and Data Analytics from the University of St. Thomas in St. Paul, Minnesota. During my time at UST, I developed a passion for data analysis through coursework in statistics and environmental analysis. I also gained experience in the field by managing data for the University Registrar office and as a member of the Sustanability club.</p>
+    
+  </div>
+  <div class="about-section">
+    <h3>Environmental Analysis Experience</h3>
+    <p>I'm currently conducting a research project regarding the Minneapolis 2040 climate plan. In this project, I conduct energy analyses of city energy useage and the citys solar capacity. I also have experience with GIS mapping software and have used it to create visual representations of environmental data regarding solar implementation plans for the city.</p>
+  </div>
+  <div class="about-section">
+    <h3>Data Analysis Skills</h3>
+    <p> I developed strong data analysis skills through coursework, internships and my work at Seagate Technology. I am proficient in statistical software such as R and Excel and have experience with data cleaning, manipulation, and visualization. I am excited to apply these skills to new challenges in a professional setting.</p>
+  </div>
+</div>
+
+
+<section id="skills-section">
+  <p>My Skills</p>
+  <div class="skill-row">
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="https://yt3.ggpht.com/-asiCVTCJOCc/AAAAAAAAAAI/AAAAAAAAAAA/-3ru4V_rBcA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="PowerBI">
+      </div>
+      <h2>Power BI</h2>
+    </div>
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="https://www.betterbuys.com/wp-content/uploads/2015/07/Tableau.png" alt="Tableau">
+      </div>
+      <h2>Tableau</h2>
+    </div>
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="https://th.bing.com/th/id/R.c2f9085ba0a954d10de6d66e6abe74ca?rik=K1j0%2b1zQto9TBQ&riu=http%3a%2f%2fdl2.macupdate.com%2fimages%2ficons256%2f50318.png%3fd%3d1516370391&ehk=8FYedi526PjNIGnjXanw%2fR7l1tlbSRdZC13%2fXPlaQac%3d&risl=&pid=ImgRaw&r=0" alt="R">
+      </div>
+      <h2>R</h2>
+    </div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" alt="Python">
+      </div>
+      <h2>Python</h2>
+    </div>
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="https://doctranslator.com/wp-content/uploads/2021/05/excel_icon-1024x1024.png" alt="Excel">
+      </div>
+      <h2>Excel</h2>
+    </div>
+    <div class="skill-item">
+      <div class="skill-img">
+        <img src="esg.png" alt="ESG">
+      </div>
+      <h2>ESG</h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="projects-section">
+    <div class="header-content">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Game Theory: Squid Games</h3>
+          <a href="projects/gameproject.html" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Human Consumerism Behavior: The Rise of the Throwaway Culture</h3>
+          <a href="projects/human.html" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Nutrition, Physical Activity, and Obesity Data Analysis</h3>
+          <a href="projects/obesity.html" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Neighborhood House Data Analysis</h3>
+          <a href="projects/Neighborhood House.html" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>University Resistrar Training Platform</h3>
+          <a href="projects/SDR.html" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Urban Solar Capacity & Implementation</h3>
+          <a href="projects/proposal.html" class="btn">View project proposal</a>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<div id="resume-section">
+  <div class="header-content">
+    <h2>Resume</h2>
+    <ul>
+      <li>
+        <div data-toggle="buttons">
+          <a href="Resume1.pdf" target="_blank" class="btn btn-secondary btn-sm">Download My Resume</a>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<section id="connect-section" >
+  <h2>Connect With Me</h2>
+    <a href="mailto:sidneyjulian7@gmail.com?subject=Website Inquiry" class="btn">
+      <img src="mail.png" alt="Mail" >
+    </a>
+    <a href="https://www.linkedin.com/in/sidney-julian-177687195/" class="btn">
+      <img src="link.jpg" alt="LinkedIn Profile" >
+    </a>
+    <a href="tel:6519558062">
+      <img src="phone.png" alt="phone" >
+    </a>
+    
+</section>
+
+
+
+
+
+</section>
+</main>
+  
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+<script>
+$(document).ready(function() {
+  // Enable smooth scrolling on clicking links with the data-toggle attribute
+  $('button[data-toggle="scroll"]').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 1000);
+  });
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" style="--yellow-color: #8bc34a;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="toggle-header-content" data-target="#about-me">About Me</a></li>
+        <li><a href="#" class="toggle-header-content" data-target="#portfolio">Portfolio</a></li>
+        <li><a href="#" class="toggle-header-content" data-target="#resume">Resume</a></li>
+        <li><a href="#" class="toggle-header-content" data-target="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="about-me" class="header-content">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div id="portfolio" class="header-content">
+      <h2>Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div id="contact" class="header-content">
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </header>
+
+  <section id="home" class="header-content">
+    <div>
+      <h1>I'm Sidney Julian</h1>
+      <h2 id="typing-header"></h2>
+    </div>
+    <img src="Headshot.jpg" alt="My Photo">
+    <p>My name is [your name] and I am a [your profession/field] based in [your location].</p>
+    <a href="#projects" class="btn">View my work</a>
+  </section>
+
+  <section id="about" class="header-content">
+    <div>
+      <h2>About Me</h2>
+      <p>Write a brief description about yourself and your background, skills, and experience.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="header-content">
+    <div>
+      <h2>Resume</h2>
+      <ul>
+        <li>
+          <p>Download my resume <a href="resume.pdf">here</a>.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="header-content">
+    <div>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Squid Games</h3>
+          <li><a href="gameproject.html">Squid Games</a></li>
+          <p>Description of project 1.</p>
+          <a href="#" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Human Consumption</h3>
+          <li><a href="Human Consumption.pdf">Human Consumption</a></li>
+          <p>Description of project 2.</p>
+          <a href="#" class="btn">View project</a>
+        </li>
+        <li>
+          <h3>Obesity</h3>
+          <li><a href="Obesity.html">Project 3</a></li>
+          <p>Description of project 3.</p>
+          <a href="#" class="btn">View project</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="header-content">
+    <div>
+      <h2>Contact Me</h2>
+      <form action="send-message.php" method="post">
+        <label>
+          Name:
+          <input type="text" name="name" required>
+        </label>
+        <br>
+        <label>
+          Email:
